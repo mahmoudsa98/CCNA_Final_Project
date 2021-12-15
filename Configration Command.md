@@ -8,12 +8,19 @@ Configration Command
 
                                                           < < SW1 > >
 Switch>en
+
 Switch#conf t
+
 Switch(config)#hostname SW1
+
 SW1(config)#vtp mode server 
+
 SW1(config)#vtp domain ccna
+
 SW1(config)#vtp password cisco
+
 SW1(config)#int range f0/1-4
+
 SW1(config-if-range)#switchport mode trunk 
 SW1(config-if-range)#switchport nonegotiate
 SW1(config-if-range)#switchport trunk native vlan 99  
